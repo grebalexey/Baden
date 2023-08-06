@@ -2,10 +2,10 @@ body{
     padding: 0;
     margin: 0;
     height: 100%;
-    /* width: 94%; */
+    width: 1550px;
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     color: #333;
     line-height: normal;
@@ -38,7 +38,7 @@ body{
 .header-top{
     /* display: flex;
     align-items: center; */
-    height: 106px;
+    height: 75px;
     padding: 8px 0 0;
 }
 
@@ -89,6 +89,42 @@ body{
     font-weight: 400;
 }
 
+.header-bottom{
+    height: 86px;
+    flex-shrink: 0;
+    background: var(--baden, #3C3A83);
+    box-sizing: border-box;
+    padding: 15px 0 0;
+}
+
+.header-bottom__catalog{
+    width: 319px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: var(--ffffff, #FFF);
+    box-sizing: border-box;
+    padding: 15px 0 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.catalog__list{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.catalog__burger{
+    width: 20px;
+}
+
+.catalog__text{
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 .footer{
     height: 150px;
