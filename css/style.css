@@ -170,6 +170,11 @@ body{
     margin: 0 0 0 73px;
 }
 
+.main__container{
+    display: flex;
+    flex-direction: column;
+}
+
 .main__banner{
     width: 1720px;
     height: 647px;
@@ -212,7 +217,7 @@ body{
     z-index: 1;
 }
 
-.button__item{
+.banner-button__item{
     width: 294px;
     height: 72px;
     flex-shrink: 0;
@@ -227,4 +232,115 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main-section__category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section__title{
+    display: flex;
+    align-items: center;
+}
+
+.section__title{
+    color: var(--baden, #333);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section__line{
+    width: 923px;
+    height: 1px;
+    background: var(--baden, #000);
+    margin-left: 75px;
+
+}
+
+.category__items{
+    display: flex;
+    align-items: center;
+}
+
+.category__links{
+    width: 400px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.category__text{
+    position: relative;
+    z-index: 1;
+    left: 34px;
+    color: #FFF;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.category__links + .category__links{
+    margin-left: 40px;
+} 
+    
+
+/* .category__links::after{
+    content: "";
+    width: 400px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.40);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.category__links-santech{
+    background: url(../images/santech.jpg), lightgray 50% / cover no-repeat;
+
+}
+
+.category__links-mebel{
+    background: url(../images/mebel.jpg), lightgray 50% / cover no-repeat;
+
+}
+
+.category__links-accessories{
+    background: url(../images/accessories.jpg), lightgray 50% / cover no-repeat;
+
+}
+
+.category__links-plitka{
+    background: url(../images/plitka.jpg), lightgray 50% / cover no-repeat;
+
+}
+
+.main-section__button{
+    width: 357px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: var(--baden, #3C3A83);
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
 }
