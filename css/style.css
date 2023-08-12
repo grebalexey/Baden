@@ -4,7 +4,7 @@
 }
 
 body{
-    width: 1920px;
+    /* width: 1920px; */
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -188,6 +188,10 @@ body{
     background: url(../images/main.jpg), lightgray 50% / cover no-repeat;
     margin-top: 50px;
     position: relative;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 .main__banner::after{
@@ -200,6 +204,16 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    
+}
+
+.banner__content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 143px 0 0 147px;
 }
 
 .banner__text{
@@ -211,14 +225,12 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 143px 285px 20px 147px;
     position: relative;
     z-index: 1;
 }
 
 .banner__button{
     position: relative;
-    left: 147px;
     z-index: 1;
 }
 
@@ -227,6 +239,38 @@ body{
     height: 72px;
     flex-shrink: 0;
     
+}
+
+.banner__switch{
+    position: relative;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+.main-button__left{
+    width: 60px;
+    height: 60px; 
+    z-index: 1;
+    align-self: center;
+    position: relative;
+    
+}
+
+.main-button__right{
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    align-self: center;
+    position: relative;
+    
+}
+
+.banner-button__left{
+    left: -30px;
+}
+
+.banner-button__right{
+   right: -30px;
 }
 
 .main__button{
@@ -356,16 +400,30 @@ body{
     margin-top: 35px;
 }
 
+.main-section__popular{
+    padding-bottom: 114px;
+}
+
+.main-section__discount{
+    padding-bottom: 119px;
+}
+
+.main-section__category{
+    padding-bottom: 110px;
+}
+
 .main-section__sales{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sales__line{
+.discount__line{
     width: 1317px;
     margin-left: 58px;
 }
+
+
 
 .sales__menu{
    
@@ -397,6 +455,11 @@ body{
     justify-content: center;
 }
 
+.sales-menu__links-active{
+    color: var(--baden, #4C4ABE);
+    border-color: #4C4ABE;
+}
+
 .sales-menu__items + .sales-menu__items{
     margin-left: 40px;
 }
@@ -407,6 +470,19 @@ body{
     margin-top: 35px;
 }
 
+.menu-cards__content{
+    display: flex;
+    align-items: center;
+}
+
+.menu-button__left{
+    left: 30px;
+}
+
+.menu-button__right{
+    right: 30px;
+}
+
 .cards__items{
     width: 400px;
     height: 546px;
@@ -414,6 +490,7 @@ body{
     background: #FFF;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
     text-decoration: none;
+    display: grid;
 }
 
 .cards__items + .cards__items{
@@ -425,6 +502,37 @@ body{
     width: 358px;
     height: 316px;
     margin: 18px 21px 0;
+}
+
+.cards__stickers{
+    position: absolute;
+    justify-self: flex-end;
+    align-self: center;
+    padding-right: 37px;
+}
+
+.cards-stickers__inner{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+} 
+
+.cards-stickers__text{
+    position: absolute;
+    color: var(--baden, #333);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cards__new{
+    margin-bottom: 10px;
+}
+
+.cards-stickers__text-discount{
+    color: #FFF;
 }
 
 .cards__title{
@@ -461,7 +569,7 @@ body{
     margin: 0 15px 20px 18px;
 }
 
-.cards__discount{
+.cards__newprice{
     color: var(--baden, #3C3A83);
     font-size: 25px;
     font-style: normal;
@@ -496,4 +604,186 @@ body{
     width: 447px;
     height: 72px;
     margin-top: 35px;
+}
+
+.popular__line{
+    width: 1407px;
+    margin-left: 36px;
+}
+
+.footer{
+    /* height: 408px; */
+    background: var(--unnamed, #333);
+
+}
+
+.footer-top__container{
+    align-items: flex-start;
+}
+
+.footer-top__logo{
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.logo__desc-footer{
+    color: var(--baden, #EEF);
+    padding-left: 13px;
+    width: 178px;
+}
+
+.footer-top__catalog{
+    margin: 30px 0 0 61px;
+}
+
+.footer__title{
+    color: #FFF;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 18px;
+}
+
+.footer__item{
+    
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+}
+
+.footer__item + .footer__item{
+    margin-top: 22px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-top__about{
+    margin: 30px 0 0 108px;
+}
+
+.footer-top__connection{
+    margin: 30px 0 0 190px;
+}
+
+.footer-connection__email{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.email__link{
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-connection__phone{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+}
+
+.phone{
+    margin-left: 20px;
+}
+
+.footer-connection__instagram{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 34px;
+}
+
+.intagram__link{
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer__line{
+    width: 1920px;
+    height: 1px;
+    opacity: 0.5;
+    background: #939393;
+    margin-top: 31px;
+}
+
+.footer-bottom{
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.footer-bottom__container{
+    justify-content: space-between;
+}
+
+.footer-bottom__copyright{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-bottom__items{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.footer-items__cash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 39px;
+}
+
+.footer-items__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 46px 0 30px;
+}
+
+.footer-items__sberonline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.footer-items__line{
+    width: 1px;
+    height: 62px;
+    background: #444;
+}
+
+.footer-items__desc{
+    margin-top: 5px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
