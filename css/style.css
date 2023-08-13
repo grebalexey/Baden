@@ -1176,3 +1176,140 @@ ul{
 .about__text{
     width: 575px;
 }
+
+.order__inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.order__information{
+    width: 1130px;
+    height: 1418px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #939393);
+    padding: 35px 0 0 72px;
+}
+
+.order__price{
+    width: 547px;
+    height: 356px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #939393);
+}
+
+.customer__fullname{
+    display: flex;
+    align-items: center;
+}
+
+.customer-fullname__surname{
+    margin-left: 30px;
+}
+
+.customer__contact{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.customer-contact__phone{
+    margin-left: 30px;
+}
+
+.customer-information__title{
+    color: var(--baden, #939393);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.customer-information__title-required::after{
+    color: red;
+    content: '*';
+}
+
+.customer-fullname__box{
+    width: 375px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #3C3A83);
+    margin-top: 13px;
+}
+
+.customer-fullname__box::placeholder{
+    color: var(--baden, #939393);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 22px 140px 21px 27px;
+}
+
+.information__delivery{
+    margin-top: 35px;
+}
+
+.delivery__box{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #939393;
+    margin-right: 11px;
+}
+
+.delivery__box-active{
+    border: 1px solid;
+    border-color: #4C4ABE;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.delivery__courier{
+    display: flex;
+    align-items: center;
+}
+
+.delivery__pickup{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.information__adress{
+    margin-top: 35px;
+}
+
+.adress__box{
+    width: 777px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #3C3A83);
+    margin-top: 13px;
+}
+
+.adress__street{
+    margin-top: 13px;
+}
+
+.adress__row{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.adress-row__box{
+    width: 150px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #3C3A83);
+    margin-top: 13px;
+}
+
+.adress-row__item + .adress-row__item{
+    margin-left: 55px;
+}
