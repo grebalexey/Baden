@@ -1,12 +1,38 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
 }
 
 body{
-    /* width: 1920px; */
-    margin: 0;
+    /* width: 1920px;
+    margin: 0; */
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+    /* width: 94% */
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    flex: 0 0 auto;
+}
+
+.main{
+    flex: 1 0 auto;
+}
+
+.footer{
+    flex: 0 0 auto;
 }
 
 .container{
@@ -14,6 +40,9 @@ body{
     align-items: center;
     padding: 0 100px;
     box-sizing: border-box;
+    min-width: 1760px;
+    /* width: 96%; */
+    justify-content: space-between;
 }
 
 .header-top__logo{
@@ -54,7 +83,7 @@ body{
 }
 
 .menu__item{
-    color: var(--baden, #272727);
+    
     font-size: 21px;
     font-style: normal;
     font-weight: 400;
@@ -67,7 +96,7 @@ body{
 
 .menu__link{
     text-decoration: none;
-    
+    color: var(--baden, #272727);
 }
 
 .header-bottom{
@@ -786,4 +815,355 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.cooperation__container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cooperation__line{
+    width: 1317px;
+    margin-left: 27px;
+}
+
+.main__navigation{
+    padding: 20px 0 30px;
+}
+
+.navigation__inner{
+    display: flex;
+    align-items: center;
+}
+
+.navigation__page{
+    color: var(--baden, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__item{
+    margin-right: 20px;
+}
+
+.navigation__page + .navigation__page{
+    margin-left: 10px;
+}
+
+.cooperation__content{
+    display: flex;
+}
+
+.cooperation__text{
+    margin-top: 165px;
+    margin-right: 57px;
+}
+
+
+.cooperation-text__title{
+    margin-top: 33px;
+    color: var(--baden, #333); 
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cooperation-text__desc{
+    color: var(--baden, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 38px;
+}
+
+.cooperation-connection__email{
+    
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cooperation-email__link{
+    color: var(--baden, #3C3A83);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.cooperation-connection__phone{
+    color: var(--baden, #3C3A83);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 32px;
+}
+
+.delivery__line{
+    width: 1317px;
+    margin-left: 29px;
+}
+
+.delivery__content{
+    display: flex;
+    align-items: center;
+}
+
+.delivery__map{
+    width: 837px;
+    height: 634px;
+    
+}
+
+.delivery__price{
+    margin-left: 38px;
+}
+
+.price__items{
+    display: flex;
+    align-items: center;
+}
+
+.price__items + .price__items{
+    margin-top: 58px;
+}
+
+.price-items__line{
+    display: flex;
+    align-items: center;
+}
+
+.price-items__text{
+    margin-left: 14px;
+    color: var(--baden, #333);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 39px;
+}
+
+.price-items__box{
+    width: 228px;
+    height: 46px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #939393);
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--baden, #939393);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.price__line{
+    width: 790px;
+    height: 1px;
+    opacity: 0.5;
+    background: #939393;
+    margin: 55px 0 33px 19px;
+}
+
+.delivery__direction{
+    display: flex;
+    align-items: center;
+}
+
+.page__title{
+    color: var(--baden, #3C3A83);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.direction__route + .direction__route{
+    margin-left: 246px;
+}
+
+.direction__price{
+    color: #4F4F4F;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact__line{
+    width: 1246px;
+    margin-left: 59px;
+}
+
+.contact__map{
+    width: 1722px;
+    height: 492px;
+}
+
+.contact__shops{
+    margin-bottom: 85px;
+}
+
+.shops__row{
+    display: flex;
+    align-items: center;
+    width: 1720px;
+    height: 275px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    justify-content: space-between;
+    padding: 0 62px 0 46px;
+}
+
+.shops__row + .shops__row{
+    margin-top: 30px;
+}
+
+.shops__photo{
+    width: 354px;
+    height: 215px;
+}
+
+.shops__desc{
+    margin-left: 61px;
+    width: 966px;
+}
+
+.shops-desc__title{
+    color: var(--baden, #3C3A83);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.shops-desc__place{
+    color: var(--baden, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 61px;
+}
+
+.shops-desc__contacts{
+    display: flex;
+    align-items: center;
+}
+
+.shops-contacts__phone{
+    display: flex;
+    align-items: center;
+    color: var(--baden, #333);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.shops-contacts__phone + .shops-contacts__phone{
+    margin-left: 42px;
+}
+
+.contacts-phone__number{
+    margin-left: 16px;
+}
+
+.shops-contacts__email{
+    display: flex;
+    align-items: center;
+    margin-left: 42px;
+}
+
+.contacts-email__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--baden, #333);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contacts-email__number{
+    margin-left: 16px;
+}
+
+.shops__line{
+    width: 1px;
+    height: 174px;
+    background: #939393;
+    margin: 51px 56px 50px 0px;
+}
+
+.shops__schedule{
+    
+}
+
+.shops-schedule__title{
+    color: var(--baden, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.shops-schedule__time{
+    color: var(--baden, #939393);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.shops-schedule__weekends{
+    color: var(--baden, #939393);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.about__line{
+    width: 1552px;
+    margin-left: 41px;
+}
+
+.about-content__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content__row:last-child{
+    margin-left: 104px;
+}
+
+.about-text__desc{
+    color: var(--gray-1, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.about__content:last-child{
+    margin-bottom: 93px;
 }
