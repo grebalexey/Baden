@@ -1148,12 +1148,13 @@ ul{
 .about-content__row{
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
 }
 
-.about-content__row:last-child{
-    margin-left: 104px;
-}
+/* .about-content__row:last-child{
+    margin-left: ;
+} */
 
 .about-text__desc{
     color: var(--gray-1, #333);
@@ -1164,6 +1165,14 @@ ul{
     
 }
 
+.about__content{
+    width: 100%;
+}
+
 .about__content:last-child{
     margin-bottom: 93px;
+}
+
+.about__text{
+    width: 575px;
 }
