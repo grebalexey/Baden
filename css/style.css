@@ -1190,6 +1190,9 @@ ul{
     border-radius: 3px;
     border: 1px solid var(--baden, #939393);
     padding: 35px 0 0 72px;
+    background-image: url(../images/korzinavector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 .order__price{
@@ -1252,31 +1255,7 @@ ul{
     margin-top: 35px;
 }
 
-.delivery__box{
-    width: 40px;
-    height: 40px;
-    border-radius: 3px;
-    border: 1px solid;
-    border-color: #939393;
-    margin-right: 11px;
-}
-
-.delivery__box-active{
-    border: 1px solid;
-    border-color: #4C4ABE;
-    width: 40px;
-    height: 40px;
-    border-radius: 3px;
-}
-
-.delivery__courier{
-    display: flex;
-    align-items: center;
-}
-
-.delivery__pickup{
-    display: flex;
-    align-items: center;
+.delivery__checkbox + .delivery__checkbox{
     margin-top: 20px;
 }
 
@@ -1313,3 +1292,137 @@ ul{
 .adress-row__item + .adress-row__item{
     margin-left: 55px;
 }
+
+
+.information__payment{
+    margin-top: 35px;
+}
+
+.payment__method{
+    display: flex;
+    align-items: center;
+}
+
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.page__checkbox{
+    display: none;
+}
+
+.custom__checkbox{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #939393);
+    margin-right: 11px;
+    position: relative;
+}
+
+.custom__checkbox::before{
+    content: '';
+    display: block;
+    background-image: url(../images/checked.png);
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.page__checkbox:checked + .custom__checkbox::before{
+    opacity: 1;
+}
+
+.checkbox__text{
+    color: var(--baden, #939393);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.payment__checkbox + .payment__checkbox{
+    margin-left: 30px;
+}
+
+.information__comments{
+    margin-top: 35px;
+}
+
+.comments__textarea{
+    width: 780px;
+    height: 133px;
+    border-radius: 3px;
+    border: 1px solid var(--baden, #3C3A83);
+}
+
+.order__price{
+    padding: 35px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-price__amount{
+    color: var(--baden, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.order-price__price{
+    display: flex;
+    align-items: center;
+}
+
+.price__text{
+    color: var(--baden, #333);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 36px;
+}
+
+.price__number{
+    color: var(--baden, #3C3A83);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.price__button{
+    width: 264px;
+    height: 72px;
+    border-radius: 2px;
+    background: var(--baden, #3C3A83);
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-self: center;
+}
+
+.price-desc__text{
+    width: 453px;
+    text-align: center;
+    color: var(--baden, #939393);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 17px;
+}
+
+.price-desc__link{
+    color: var(--baden, #939393);
+}
+

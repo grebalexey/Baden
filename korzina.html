@@ -145,15 +145,19 @@
                     <div class="information__delivery">
                         <h2 class="page__title">Способ получения</h2>
                         
-                            <form class="delivery__courier">
-                                <input class="delivery__box delivery__box-active" id="delivery__courier" type="checkbox">
-                                <label class="customer-information__title" for="delivery__courier">Доставка</label>
-                            </form>  
-                            
-                            <form class="delivery__pickup">
-                                <input class="delivery__box" id="delivery__pickup" type="checkbox">
-                                <label class="customer-information__title" for="delivery__pickup">Самовывоз</label>
-                            </form> 
+                        <form class="delivery__method">
+                            <label class="checkbox delivery__checkbox">
+                                <input class="page__checkbox" type="radio" name="delivery__checkbox"> 
+                                <span class="custom__checkbox"></span>
+                                <span class="checkbox__text">Доставка</span>
+                            </label>
+                            <label class="checkbox delivery__checkbox">
+                                <input class="page__checkbox" type="radio" name="delivery__checkbox"> 
+                                <span class="custom__checkbox"></span>
+                                <span class="checkbox__text">Самовывоз</span>
+                            </label>
+
+                        </form>
                         
                     </div>
                     <div class="information__adress">
@@ -188,16 +192,51 @@
                     </div>
                     <div class="information__payment">
                         <h2 class="page__title">Способы оплаты</h2>
-                        <form class="delivery__courier">
-                            <input class="delivery__box delivery__box-active" id="delivery__courier" type="checkbox">
-                            <label class="customer-information__title" for="delivery__courier">Доставка</label>
+                        <form class="payment__method">
+                            <label class="checkbox payment__checkbox">
+                                <input class="page__checkbox" type="radio" name="payment__checkbox"> 
+                                <span class="custom__checkbox"></span>
+                                <span class="checkbox__text">Наличными курьеру</span>
+                            </label>
+                            <label class="checkbox payment__checkbox">
+                                <input class="page__checkbox" type="radio" name="payment__checkbox"> 
+                                <span class="custom__checkbox"></span>
+                                <span class="checkbox__text">Картой курьеру</span>
+                            </label>
+                            <label class="checkbox payment__checkbox">
+                                <input class="page__checkbox" type="radio" name="payment__checkbox"> 
+                                <span class="custom__checkbox"></span>
+                                <span class="checkbox__text">Картой на сайте</span>
+                            </label>
+
+                           
+
                         </form> 
                     </div>
                     <div class="information__comments">
                         <h2 class="page__title">Комментарий</h2>
+                        <form class="comments__input">
+                            <textarea class="comments__textarea"></textarea>
+                        </form>
                     </div>
                 </div>
-                <div class="order__price"></div>
+                <div class="order__price">
+                    <div class="order-price__amount">Товаров - 4 шт</div>
+                    <div class="order-price__price">
+                        <div class="price__text">Стоимость товара</div>
+                        <div class="price__number">104 090 ₽</div>
+                    </div>
+
+                    <button class="price__button">Оформить</button>
+                    <div class="order-price__desc">
+                        <p class="price-desc__text">
+                            Нажимая «Оформить заказ», вы соглашаетесь с условиями 
+                            <a class="price-desc__link" href="#">Пользовательского соглашения</a> и 
+                            <a class="price-desc__link" href="#">Политики конфиденциальности</a>
+                        </p>
+                    </div>
+                    
+                </div>
             </div>
             
         </div>
