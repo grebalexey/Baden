@@ -1448,12 +1448,44 @@ a{
 }
 
 .pagecatalog-list__items{
+    
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.list-items__row{
     color: var(--baden, #333);
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+
+.list-items__svg:hover{
+    fill: red;
+}
+
+
+.list-items__row:hover {
+    color: var(--baden, #4C4ABE);
+}
+
+.pagecatalog-list__items:hover .list-items__row svg{
+    fill: #4C4ABE;
+}
+
+/* .pagecatalog-list__items:hover{
+    color: var(--baden, #4C4ABE);
+} */
+
+/* .pagecatalog-list__items svg:hover{
+    fill: red;
+}
+
+.pagecatalog-list__items:hover svg{
+    fill: #4C4ABE;
+} */
 
 .pagecatalog-list__items + .pagecatalog-list__items{
     margin-top: 15px;
