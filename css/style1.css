@@ -1,40 +1,5 @@
-.checkbox{
-    display: flex;
-    align-items: center;
-}
-
-.page__checkbox{
-    display: none;
-}
-
-.custom__checkbox{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 3px;
-    border: 1px solid var(--baden, #939393);
-    margin-right: 11px;
-    position: relative;
-}
-
-.custom__checkbox::before{
-    content: '';
-    display: block;
-    background-image: url(../images/checked.png);
-    width: 40px;
-    height: 40px;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.page__checkbox:checked + .custom__checkbox::before{
-    opacity: 1;
-}
-
-.checkbox__text{
-    color: var(--baden, #939393);
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.line{
+    width: 1920px;
+    height: 30px;
+    background-color: red;
 }
