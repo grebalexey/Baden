@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-* {
+/* * {
     outline: solid red;
- }
+ } */
 
 html{
     height: 100%;
@@ -698,9 +698,12 @@ background: var(--baden, #3C3A83);
     /* padding: 23px auto; */
 }
 
+.sales-menu__items:hover{
+    border-color: #4C4ABE;
+}
+
 .sales-menu__items:hover .sales-menu__links{
     color: var(--baden, #4C4ABE);
-    border-color: #4C4ABE;
 }
 
 /* .sales-menu__items + .sales-menu__items{
@@ -2211,6 +2214,40 @@ background: var(--baden, #3C3A83);
     }
 }
 
+@media (max-width: 1850px){
+    .card-stickers__items svg{
+        width: 45px;
+    }
+
+    .cards-stickers__text {
+        font-size: 13px;
+    }
+
+    .card-stickers__items + .card-stickers__items {
+        margin-top: 0px;
+    }
+
+    .main-button__left svg{
+        width: 55px;
+        height: 55px;
+    }
+
+    .main-button__left{
+        width: 55px;
+        height: 55px;
+    }
+
+    .main-button__right{
+        width: 55px;
+        height: 55px;
+    }
+
+    .main-button__right svg{
+        width: 55px;
+        height: 55px;
+    }
+}
+
 @media (max-width: 1800px){
     .header-top__city{
         margin-left: 0;
@@ -2327,6 +2364,14 @@ background: var(--baden, #3C3A83);
     .catalog__burger {
         margin: 24px 20px 23.22px 20px;
     }
+
+
+}
+
+@media (max-width: 1550px){
+    .card-top__stickers {
+        margin-right: 27px;
+    }
 }
 
 @media (max-width: 1500px){
@@ -2344,6 +2389,30 @@ background: var(--baden, #3C3A83);
 
     .section__title{
         font-size: 40px;
+    }
+
+    .menu-cards__content {
+        flex-wrap: wrap;
+    }
+
+    .menu__card{
+        width: calc(33.33% - 40px);
+    }
+
+    .menu__card:last-child{
+        display: none;
+    }
+
+    .card-stickers__items svg{
+        width: 55px;
+    }
+
+    .cards-stickers__text {
+        font-size: 18px;
+    }
+
+    .card-stickers__items + .card-stickers__items {
+        margin-top: 10px;
     }
 }
 
@@ -2408,6 +2477,14 @@ background: var(--baden, #3C3A83);
     .header-bottom__schedule {
         margin-right: 160px;
     }
+
+    .card-bottom__price{
+        display: block;
+    }
+
+    .card-bottom__priceold {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 1300px){
@@ -2439,6 +2516,18 @@ background: var(--baden, #3C3A83);
 
     .header-top__city{
         display: none;
+    }
+
+    .card-stickers__items svg{
+        width: 45px;
+    }
+
+    .cards-stickers__text {
+        font-size: 13px;
+    }
+
+    .card-stickers__items + .card-stickers__items {
+        margin-top: 0px;
     }
 }
 
@@ -2533,6 +2622,22 @@ background: var(--baden, #3C3A83);
     .banner__content {
         padding: 50px 0 0 60px;
     }
+
+    /* .menu__card{
+        width: calc(50% - 40px);
+    }
+
+    .menu__card:last-child{
+        display: block;
+    } */
+
+    .card-bottom__title {
+        font-size: 28px;
+    }
+
+    .card-bottom__subtitle {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1100px){
@@ -2554,6 +2659,19 @@ background: var(--baden, #3C3A83);
 
     .cooperation__images {
         width: calc(100% - 360px);
+    }
+
+    .card__purchase svg{
+        width: 25px;
+        height: 25px;
+    }
+
+    .card-stickers__items svg{
+        width: 40px;
+    }
+
+    .cards-stickers__text {
+        font-size: 11px;
     }
 }
 
@@ -2714,6 +2832,34 @@ background: var(--baden, #3C3A83);
     .category__text {
         font-size: 20px;
     }
+
+    .card-bottom__title {
+        font-size: 24px;
+    }
+
+    .card-bottom__subtitle {
+        font-size: 14px;
+    }
+
+    .card-bottom__desc {
+        font-size: 13px;
+    }
+
+    .card-bottom__pricenew {
+        font-size: 20px;
+    }
+
+    .card-bottom__priceold {
+        font-size: 16px;
+    }
+
+    .card-top__stickers {
+        margin-right: 10px;
+    }
+
+    .menu__card {
+        width: calc(33.33% - 27px);
+    }
 }
 
 @media (max-width: 850px){
@@ -2743,6 +2889,11 @@ background: var(--baden, #3C3A83);
 
     .cooperation-images__small{
         display: block;
+    }
+
+    .card__purchase svg{
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -2797,6 +2948,31 @@ background: var(--baden, #3C3A83);
 
     .category__links + .category__links{
         margin-left: 0px;
+    }
+
+    .menu__card{
+        width: calc(50% - 40px);
+    }
+
+    .menu__card:last-child{
+        display: block;
+    }
+
+    .menu-cards__content{
+        gap: 20px;
+    }
+
+    .menu__card + .menu__card{
+        margin-left: 0;
+    }
+
+    .menu__card {
+        width: calc(50% - 10px);
+    }
+
+    .card__purchase svg {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -2954,6 +3130,11 @@ background: var(--baden, #3C3A83);
     .footer-bottom__copyright{
         margin-top: 20px;
     }
+
+    .card__purchase svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 450px){
@@ -2967,5 +3148,34 @@ background: var(--baden, #3C3A83);
 
     .button{
         width: 300px;
+    }
+
+    .card-bottom__title{
+        font-size: 14px;
+    }
+
+    .card-bottom__subtitle{
+        font-size: 10px;
+    }
+
+    .card-bottom__desc{
+        display: none;
+    }
+
+    .card-bottom__pricenew{
+        font-size: 16px;
+    }
+
+    .card-bottom__priceold{
+        font-size: 10px;
+    }
+
+    .card-stickers__items svg {
+        width: 30px;
+        height: 35px;
+    }
+
+    .cards-stickers__text {
+        font-size: 6px;
     }
 }
