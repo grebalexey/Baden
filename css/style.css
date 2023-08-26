@@ -1209,16 +1209,28 @@ background: var(--baden, #3C3A83);
 
 .cooperation__content{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .cooperation__text{
     margin-top: 165px;
-    margin-right: 57px;
+    /* margin-right: 7%; */
+    width: 33%;
+}
+
+.cooperation__images{
+    width: 60%;
+}
+
+.cooperation__images img{
+    width: 100%;
 }
 
 
 .cooperation-text__title{
-    margin-top: 33px;
+    margin-bottom: 33px;
     color: var(--baden, #333); 
     font-family: 'El Messiri', sans-serif;
     font-size: 35px;
@@ -1242,6 +1254,8 @@ background: var(--baden, #3C3A83);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    display: flex;
+    align-items: center;
 }
 
 .cooperation-email__link{
@@ -1257,6 +1271,10 @@ background: var(--baden, #3C3A83);
     font-weight: 600;
     line-height: normal;
     margin-top: 32px;
+}
+
+.cooperation-images__small{
+    display: none;
 }
 
 .delivery__line{
@@ -2177,6 +2195,11 @@ background: var(--baden, #3C3A83);
         display: flex;
         flex-direction: column;
     }
+
+    .cooperation-connection__phone{
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media (max-width: 1876px){
@@ -2246,11 +2269,31 @@ background: var(--baden, #3C3A83);
         font-style: normal;
         font-weight: 400;
     }
+
+    .cooperation__text {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 1700px){
     .banner__text{
         font-size: 55px;
+    }
+
+    .cooperation-text__title {
+        font-size: 30px;
+    }
+
+    .cooperation-text__desc {
+        font-size: 19px;
+    }
+
+    .cooperation-connection__email {
+        font-size: 22px;
+    }
+
+    .cooperation-connection__phone{
+        font-size: 22px;
     }
 }
 
@@ -2311,6 +2354,27 @@ background: var(--baden, #3C3A83);
 
     .menu__item {
         font-size: 16px;
+    }
+
+    .cooperation__text {
+        margin-top: 20px;
+    }
+
+    .cooperation-text__title {
+        font-size: 25px;
+    }
+
+    .cooperation-text__desc {
+        font-size: 17px;
+    }
+
+    .cooperation-connection__email {
+        font-size: 17px;
+    }
+
+    .cooperation-connection__phone{
+        font-size: 17px;
+        margin-top: 10px;
     }
 }
 
@@ -2426,6 +2490,10 @@ background: var(--baden, #3C3A83);
     .footer-bottom__copyright {
         font-size: 12px;
     }
+
+    .cooperation__text {
+        width: 36%;
+    }
     
 }
 
@@ -2464,6 +2532,28 @@ background: var(--baden, #3C3A83);
 
     .banner__content {
         padding: 50px 0 0 60px;
+    }
+}
+
+@media (max-width: 1100px){
+    .cooperation-connection__email svg{
+        width: 20px;
+    }
+
+    .cooperation-connection__phone svg{
+        width: 20px;
+    }
+
+    .cooperation-text__title {
+        font-size: 22px;
+    }
+
+    .cooperation__text{
+        width: 320px;
+    }
+
+    .cooperation__images {
+        width: calc(100% - 360px);
     }
 }
 
@@ -2642,6 +2732,18 @@ background: var(--baden, #3C3A83);
     .footer-items__sberonline svg {
         width: 15px;
     }
+
+    .cooperation__content{
+        align-items: flex-start;
+    }
+
+    .cooperation-images__big{
+        display: none;
+    }
+
+    .cooperation-images__small{
+        display: block;
+    }
 }
 
 @media (max-width: 800px){
@@ -2772,7 +2874,9 @@ background: var(--baden, #3C3A83);
         font-size: 10px;
     }
 
-    
+    .cooperation-images__small{
+        display: none;
+    }
 }
 
 @media (max-width: 650px){
