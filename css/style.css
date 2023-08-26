@@ -1398,19 +1398,25 @@ background: var(--baden, #3C3A83);
 }
 
 .contact__map{
-    width: 1722px;
-    height: 492px;
+    /* width: 1722px;
+    height: 492px; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact__map img{
+    
 }
 
 .contact__shops{
     margin-bottom: 85px;
+    width: 100%;
 }
 
 .shops__row{
     display: flex;
     align-items: center;
-    width: 1720px;
-    height: 275px;
+    width: 100%;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
     justify-content: space-between;
     padding: 0 62px 0 46px;
@@ -1421,13 +1427,20 @@ background: var(--baden, #3C3A83);
 }
 
 .shops__photo{
-    width: 354px;
-    height: 215px;
+    /* width: 354px;
+    height: 215px; */
+    width: 23%;
+}
+
+.shops__photo img{
+    width: 100%;
 }
 
 .shops__desc{
-    margin-left: 61px;
-    width: 966px;
+    /* margin-left: 61px; */
+    /* width: 966px; */
+    padding: 0 1.5% 0 3.5%;
+    width: 60%;
 }
 
 .shops-desc__title{
@@ -1452,6 +1465,7 @@ background: var(--baden, #3C3A83);
 .shops-desc__contacts{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .shops-contacts__phone{
@@ -1464,9 +1478,9 @@ background: var(--baden, #3C3A83);
     line-height: normal;
 }
 
-.shops-contacts__phone + .shops-contacts__phone{
+/* .shops-contacts__phone + .shops-contacts__phone{
     margin-left: 42px;
-}
+} */
 
 .contacts-phone__number{
     margin-left: 16px;
@@ -1475,7 +1489,7 @@ background: var(--baden, #3C3A83);
 .shops-contacts__email{
     display: flex;
     align-items: center;
-    margin-left: 42px;
+    /* margin-left: 42px; */
 }
 
 .contacts-email__link{
@@ -1531,8 +1545,8 @@ background: var(--baden, #3C3A83);
 }
 
 .about__line{
-    width: 1552px;
-    margin-left: 41px;
+    /* width: 1552px;
+    margin-left: 41px; */
 }
 
 .about-content__row{
@@ -1564,7 +1578,7 @@ background: var(--baden, #3C3A83);
 }
 
 .about__text{
-    width: 575px;
+    width: 33%;
 }
 
 .order__inner{
@@ -1814,9 +1828,14 @@ background: var(--baden, #3C3A83);
     display: flex;
 }
 
+.pagecatalog__left{
+    width: 23%;
+}
+
 .pagecatalog__list{
-    width: 400px;
+    /* width: 400px; */
     /* height: 837px; */
+    
     border-radius: 5px;
     border: 1px solid var(--baden, #CBCACA);
     padding: 25px 20px;
@@ -2032,8 +2051,8 @@ background: var(--baden, #3C3A83);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 42px;
-    width: 1280px;
+    margin-left: 2.5%;
+    /* width: 1280px; */
 }
 
 .pagecatalog-content__filters{
@@ -2168,7 +2187,7 @@ background: var(--baden, #3C3A83);
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 35px;
+    /* row-gap: 35px; */
     margin-top: 35px;
 }
 
@@ -2207,6 +2226,12 @@ background: var(--baden, #3C3A83);
     background: none;
     border: none;
     cursor: pointer;
+}
+
+
+
+.pagecatalog__card{
+    width: calc(33.33% - 5px);
 }
 
 @media (max-width: 1900px){
@@ -2262,6 +2287,14 @@ background: var(--baden, #3C3A83);
         width: 55px;
         height: 55px;
     }
+
+    .shops-contacts__phone{
+        font-size: 23px;
+    }
+
+    .contacts-email__link{
+        font-size: 23px;
+    }
 }
 
 @media (max-width: 1800px){
@@ -2308,6 +2341,10 @@ background: var(--baden, #3C3A83);
     .card-bottom__priceold {
         margin-top: 10px;
     }
+
+    .shops__desc{
+        padding: 0 1.5% 0 2.5%;
+    }
 }
 
 @media (max-width: 1750px){
@@ -2334,6 +2371,10 @@ background: var(--baden, #3C3A83);
     .cooperation__text {
         margin-top: 100px;
     }
+
+    .about__text{
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 1700px){
@@ -2345,7 +2386,15 @@ background: var(--baden, #3C3A83);
         font-size: 30px;
     }
 
+    .page__title{
+        font-size: 30px;
+    }
+
     .cooperation-text__desc {
+        font-size: 19px;
+    }
+
+    .about-text__desc{
         font-size: 19px;
     }
 
@@ -2456,12 +2505,24 @@ background: var(--baden, #3C3A83);
     .cooperation__text {
         margin-top: 20px;
     }
+    
+    .about__text{
+        margin-top: 20px;
+    }
 
     .cooperation-text__title {
         font-size: 25px;
     }
 
+    .page__title{
+        font-size: 25px;
+    }
+
     .cooperation-text__desc {
+        font-size: 17px;
+    }
+
+    .about-text__desc{
         font-size: 17px;
     }
 
@@ -2625,6 +2686,10 @@ background: var(--baden, #3C3A83);
         width: 36%;
     }
 
+    .about__text{
+        width: 36%;
+    }
+
     .sales-menu__links{
         font-size: 16px;
     }
@@ -2698,7 +2763,15 @@ background: var(--baden, #3C3A83);
         font-size: 22px;
     }
 
+    .page__title{
+        font-size: 22px;
+    }
+
     .cooperation__text{
+        width: 320px;
+    }
+
+    .about__text{
         width: 320px;
     }
 
@@ -3052,6 +3125,22 @@ background: var(--baden, #3C3A83);
 
     .menu__cards{
         flex-direction: column;
+    }
+
+    .about-content__row{
+        flex-direction: column;
+    }
+
+    .about-content__row--reverse{
+        flex-direction: column-reverse;
+    }
+
+    .about__text{
+        width: 100%;
+    }
+
+    .cooperation__images{
+        width: 100%;
     }
 }
 
