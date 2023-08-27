@@ -130,11 +130,12 @@ button{
     line-height: normal;
     position: relative;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-.header-top__city:hover .headertop-city__menu{
+/* .header-top__city:hover .headertop-city__menu{
     display: block;
-}
+} */
 
 .headertop-city__menu{
     width: 863px;
