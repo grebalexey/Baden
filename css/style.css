@@ -98,6 +98,10 @@ button{
     width: 1920px;
 } */
 
+.pages__list{
+    margin: 50px 0;
+}
+
 .header-top{
     width: 100%;
 }
