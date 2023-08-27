@@ -1430,6 +1430,7 @@ background: var(--baden, #3C3A83);
     height: 492px; */
     width: 100%;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .contact__map img{
@@ -1538,8 +1539,9 @@ background: var(--baden, #3C3A83);
 .shops__line{
     width: 1px;
     height: 174px;
+    /* height: 94%; */
     background: #939393;
-    margin: 51px 56px 50px 0px;
+    margin: 0px 56px 0px 0px;
 }
 
 .shops__schedule{
@@ -2508,6 +2510,14 @@ background: var(--baden, #3C3A83);
     .about__text{
         margin-top: 100px;
     }
+
+    .shops-contacts__phone{
+        font-size: 17px;
+    }
+
+    .contacts-email__number{
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1700px){
@@ -2730,6 +2740,23 @@ background: var(--baden, #3C3A83);
     .contentfilters-right__row {
         font-size: 24px;
     }
+
+    .shops-desc__contacts{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shops-desc__place{
+        margin-bottom: 20px;
+    }
+
+    .shops__row{
+        align-items: flex-start;
+    }
+
+    .shops__photo {
+        width: 27%;
+    }
 }
 
 @media (max-width: 1450px){
@@ -2866,6 +2893,10 @@ background: var(--baden, #3C3A83);
     .pagecatalog-stickers__text{
         font-size: 12px;
     }
+
+    .shops__photo {
+        width: 30%;
+    }
 }
 
 @media (max-width: 1350px){
@@ -2948,6 +2979,10 @@ background: var(--baden, #3C3A83);
 
     .price-items__box{
         min-width: 143px;
+    }
+
+    .shops-desc__place {
+        font-size: 16px;
     }
 }
 
@@ -3090,6 +3125,26 @@ background: var(--baden, #3C3A83);
         width: 25px;
         height: 25px;
     }
+
+    .shops-schedule__title {
+        font-size: 15px;
+    }
+
+    .shops-schedule__time {
+        font-size: 16px;
+    }
+
+    .shops-schedule__weekends {
+        font-size: 17px;
+    }
+
+    .shops__line {
+        margin: 0px 34px 0px 0px;
+    }
+
+    .shops__row {
+        padding: 0 40px;
+    }
     
 }
 
@@ -3227,6 +3282,10 @@ background: var(--baden, #3C3A83);
 
     .contentfilters-item__text {
         font-size: 13px;
+    }
+
+    .shops__line {
+        height: 140px;
     }
 }
 
@@ -3474,6 +3533,10 @@ background: var(--baden, #3C3A83);
     .phone__cooperation{
         display: block;
     }
+
+    .shops__row {
+        padding: 0;
+    }
 }
 
 @media (max-width: 850px){
@@ -3508,6 +3571,10 @@ background: var(--baden, #3C3A83);
     .menu-card__purchase svg{
         width: 20px;
         height: 20px;
+    }
+
+    .shops__line{
+        display: none;
     }
 }
 
@@ -3743,6 +3810,50 @@ background: var(--baden, #3C3A83);
 
     .cooperation-images__small{
         display: none;
+    }
+
+    .shops__row{
+        flex-direction: column;
+    }
+
+    .shops__photo{
+        order: 3;
+        width: 100%;
+    }
+
+    .shops-desc__contacts{
+        gap: 5px;
+    }
+
+    .shops__desc{
+        width: 100%;
+        padding: 0;
+    }
+
+    .shops-contacts__phone {
+        font-size: 16px;
+    }
+
+    .contacts-email__number{
+        font-size: 16px;
+    }
+
+    .shops__schedule{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .shops-schedule__time{
+        margin-top: 0;
+    }
+
+    .shops-schedule__weekends{
+        margin-top: 0;
+    }
+
+    .shops__schedule{
+        margin: 10px 0;
+        gap: 5px;
     }
 }
 
@@ -4067,6 +4178,10 @@ background: var(--baden, #3C3A83);
 
     .delivery__map{
         margin-top: 70px;
+    }
+
+    .shops__schedule{
+        flex-direction: column;
     }
 }
 
