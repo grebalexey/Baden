@@ -165,6 +165,8 @@
                         </div>   
                         Сантехника</li>
                 </ul>
+                
+                
             </div>
             <div class="pagecatalog__inner">
                 <div class="pagecatalog__left">
@@ -508,10 +510,13 @@
                         <div class="pagecatalog-filters__price">
                             <div class="pagecatalog-filters__title">Цена</div>
                             <form class="pagecatalog-filters__row">
-                                <input class="filters-row__input filters-row__label--left" type="text" placeholder="0">
-                                -
-                                <input class="filters-row__input filters-row__label--right" type="text" placeholder="120 000">
-                                <span class="filters-row__difinition">₽</span>
+                                <div class="filters-row__inner">
+                                    <input class="filters-row__input filters-row__label--left" type="text" placeholder="0">
+                                    -
+                                    <input class="filters-row__input filters-row__label--right" type="text" placeholder="120 000">
+                                    <span class="filters-row__difinition">₽</span>
+                                </div>
+                                
                             </form>
                             <div class="placecatalog-filters__slider">
                                 <div class="slider__line--wide">
@@ -625,11 +630,13 @@
                             <div class="pagecatalog-filters__title">Габариты</div>
                             <form class="pagecatalog-filters__row">
                                 <label class="filters-row__label" for="filters-row__input">Ширина</label>
-                                <br>
-                                <input class="filters-row__input filters-row__label--left" id="filters-row__input" type="text" placeholder="0">
-                                -
-                                <input class="filters-row__input filters-row__label--right" id="filters-row__input" type="text" placeholder="120">
-                                <span class="filters-row__difinition">см</span>
+                                <div class="filters-row__inner">
+                                    <input class="filters-row__input filters-row__label--left" id="filters-row__input" type="text" placeholder="0">
+                                    -
+                                    <input class="filters-row__input filters-row__label--right" id="filters-row__input" type="text" placeholder="120">
+                                    <span class="filters-row__difinition">см</span>
+                                </div>
+                                
                                 
                             </form>
                             <div class="placecatalog-filters__slider">
@@ -649,11 +656,13 @@
                             </div>
                             <form class="pagecatalog-filters__row">
                                 <label class="filters-row__label" for="filters-row__input">Длина</label>
-                                <br>
-                                <input class="filters-row__input filters-row__label--left" id="filters-row__input" type="text" placeholder="0">
-                                -
-                                <input class="filters-row__input filters-row__label--right" id="filters-row__input" type="text" placeholder="120">
-                                <span class="filters-row__difinition">см</span>
+                                <div class="filters-row__inner">
+                                    <input class="filters-row__input filters-row__label--left" id="filters-row__input" type="text" placeholder="0">
+                                    -
+                                    <input class="filters-row__input filters-row__label--right" id="filters-row__input" type="text" placeholder="120">
+                                    <span class="filters-row__difinition">см</span>
+                                </div>
+                                
                                 
                             </form>
                             <div class="placecatalog-filters__slider">
@@ -673,11 +682,13 @@
                             </div>
                             <form class="pagecatalog-filters__row">
                                 <label class="filters-row__label" for="filters-row__input">Глубина</label>
-                                <br>
-                                <input class="filters-row__input filters-row__label--left" id="filters-row__input" type="text" placeholder="0">
-                                -
-                                <input class="filters-row__input filters-row__label--right" id="filters-row__input" type="text" placeholder="120">
-                                <span class="filters-row__difinition">см</span>
+                                <div class="filters-row__inner">
+                                    <input class="filters-row__input filters-row__label--left" id="filters-row__input" type="text" placeholder="0">
+                                    -
+                                    <input class="filters-row__input filters-row__label--right" id="filters-row__input" type="text" placeholder="120">
+                                    <span class="filters-row__difinition">см</span>
+                                </div>
+                                
                                 
                             </form>
                             <div class="placecatalog-filters__slider">
@@ -761,6 +772,7 @@
                         <button class="button pagecatalog-filters__button--white pagecatalog__button--white">Показать доп.фильтры</button>
                         <button class="button pagecatalog-filters__button">Показать 100 товаров</button>
                     </div>
+                    
                 </div>
                 <div class="pagecatalog__content">
                     <div class="pagecatalog-content__filters">
@@ -870,20 +882,25 @@
                         
                     </div>
                     <div class="pagecatalog-content__cards">
+                        <div class="pagecatalog-button__row">
+                            <button class="pagecatalog__button pagecatalog__button-categories">Подкатегории</button>
+                            <button class="pagecatalog__button pagecatalog__button-filters">Фильтры</button>
+                            <button class="pagecatalog__button pagecatalog__button-sort">Сортировать</button>
+                        </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -891,14 +908,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -909,18 +926,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -928,14 +945,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -946,18 +963,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -965,14 +982,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -983,18 +1000,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1002,14 +1019,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1020,18 +1037,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1039,14 +1056,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1057,18 +1074,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1076,14 +1093,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1094,18 +1111,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1113,14 +1130,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1131,18 +1148,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1150,14 +1167,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1168,18 +1185,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1187,14 +1204,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1205,18 +1222,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1224,14 +1241,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1242,18 +1259,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1261,14 +1278,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
@@ -1279,18 +1296,18 @@
                         </div>
                         <div class="card pagecatalog__card">
                             <div class="card__top">
-                                <a href="" class="card-top__image">
+                                <a href="" class="card-top__image pagecatalog-card__image">
                                     <img src="images/izliv.jpg" alt="">
                                 </a>
-                                <div class="card-top__stickers">
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text">NEW</span> 
+                                <div class="card-top__stickers pagecatalog-card__stickers">
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text pagecatalog-stickers__text">NEW</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" stroke="#333333"/>
                                         </svg>
                                     </div>
-                                    <div class="card-stickers__items">
-                                        <span class="cards-stickers__text cards-stickers__text--white">-20%</span> 
+                                    <div class="card-stickers__items pagecatalog-stickers__items">
+                                        <span class="cards-stickers__text cards-stickers__text--white pagecatalog-stickers__text">-20%</span> 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                                             <circle cx="27.5" cy="27.5" r="27" fill="#333333" stroke="#333333"/>
                                         </svg>
@@ -1298,14 +1315,14 @@
                                 </div>
                             </div>
                             <div class="card__bottom">
-                                <div class="card-bottom__title">Petale De Cristal</div>
-                                <div class="card-bottom__subtitle">Полотенцедержатель </div>
-                                <div class="card-bottom__desc">600 мм, цвет золотой</div>
-                                <div class="card-bottom__price">
-                                    <div class="card-bottom__pricenew">104 090 ₽</div>
-                                    <div class="card-bottom__priceold">124 990 ₽</div>
+                                <div class="card-bottom__title pagecatalog-card__title">Petale De Cristal</div>
+                                <div class="card-bottom__subtitle pagecatalog-card__subtitle">Полотенцедержатель </div>
+                                <div class="card-bottom__desc pagecatalog-card__desc">600 мм, цвет золотой</div>
+                                <div class="card-bottom__price pagecatalog-card__price">
+                                    <div class="card-bottom__pricenew pagecatalog-card__pricenew">104 090 ₽</div>
+                                    <div class="card-bottom__priceold pagecatalog-card__priceold">124 990 ₽</div>
                                 </div>
-                                <button class="card__purchase">
+                                <button class="card__purchase pagecatalog-card__purchase">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                                         <path d="M11.3435 20.1719H11.3448C11.3459 20.1719 11.347 20.1717 11.3481 20.1717H26.752C27.1312 20.1717 27.4646 19.9271 27.5688 19.5726L30.9673 8.00847C31.0405 7.75916 30.9892 7.49114 30.8288 7.28421C30.6681 7.07728 30.417 6.95553 30.1504 6.95553H9.38408L8.77674 4.29831C8.69023 3.92037 8.34552 3.65149 7.94727 3.65149H2.84961C2.38033 3.65149 2 4.02126 2 4.4775C2 4.93374 2.38033 5.30351 2.84961 5.30351H7.26581C7.37334 5.77438 10.1722 18.0195 10.3333 18.724C9.43032 19.1056 8.79688 19.9809 8.79688 20.9977C8.79688 22.364 9.94031 23.4757 11.3457 23.4757H26.752C27.2212 23.4757 27.6016 23.1059 27.6016 22.6497C27.6016 22.1935 27.2212 21.8237 26.752 21.8237H11.3457C10.8773 21.8237 10.4961 21.4531 10.4961 20.9977C10.4961 20.5429 10.876 20.173 11.3435 20.1719ZM29.024 8.60754L26.111 18.5197H12.0272L9.76154 8.60754H29.024Z" fill="white"/>
                                         <path d="M10.4961 26.7836C10.4961 28.1499 11.6395 29.2616 13.0449 29.2616C14.4503 29.2616 15.5937 28.1499 15.5937 26.7836C15.5937 25.4172 14.4503 24.3055 13.0449 24.3055C11.6395 24.3055 10.4961 25.4172 10.4961 26.7836ZM13.0449 25.9576C13.5133 25.9576 13.8945 26.3282 13.8945 26.7836C13.8945 27.239 13.5133 27.6096 13.0449 27.6096C12.5765 27.6096 12.1953 27.239 12.1953 26.7836C12.1953 26.3282 12.5765 25.9576 13.0449 25.9576Z" fill="white"/>
