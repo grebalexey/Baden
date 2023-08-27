@@ -1599,29 +1599,44 @@ background: var(--baden, #3C3A83);
 }
 
 .order__information{
-    width: 1130px;
-    height: 1418px;
+    /* width: 1130px;
+    height: 1418px; */
+    width: 65%;
     border-radius: 3px;
     border: 1px solid var(--baden, #939393);
-    padding: 35px 0 0 72px;
+    padding: 35px 0 35px 72px;
     background-image: url(../images/korzinavector.png);
     background-repeat: no-repeat;
     background-position: top right;
 }
 
 .order__price{
-    width: 547px;
-    height: 356px;
+    /* width: 547px;
+    height: 356px; */
+    width: 32%;
     border-radius: 3px;
     border: 1px solid var(--baden, #939393);
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+}
+
+.information__customer{
+    width: 100%;
 }
 
 .customer__fullname{
     display: flex;
     align-items: center;
+    width: 100%;
+}
+
+.customer-fullname__name{
+    width: 33%;
 }
 
 .customer-fullname__surname{
+    width: 33%;
     margin-left: 30px;
 }
 
@@ -1631,7 +1646,12 @@ background: var(--baden, #3C3A83);
     margin-top: 15px;
 }
 
+.customer-contact__email{
+    width: 33%;
+}
+
 .customer-contact__phone{
+    width: 33%;
     margin-left: 30px;
 }
 
@@ -1649,11 +1669,13 @@ background: var(--baden, #3C3A83);
 }
 
 .customer-fullname__box{
-    width: 375px;
-    height: 70px;
+    /* width: 375px;
+    height: 70px; */
+    width: 100%;
     border-radius: 3px;
     border: 1px solid var(--baden, #3C3A83);
     margin-top: 13px;
+    padding: 21px 0px 21px 27px;
 }
 
 .customer-fullname__box::placeholder{
@@ -1662,7 +1684,7 @@ background: var(--baden, #3C3A83);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 22px 140px 21px 27px;
+    /* padding: 22px 140px 21px 27px; */
 }
 
 .information__delivery{
@@ -1678,11 +1700,13 @@ background: var(--baden, #3C3A83);
 }
 
 .adress__box{
-    width: 777px;
-    height: 70px;
+    /* width: 777px;
+    height: 70px; */
+    width: 69%;
     border-radius: 3px;
     border: 1px solid var(--baden, #3C3A83);
     margin-top: 13px;
+    padding: 21px 0px 21px 27px;
 }
 
 .adress__street{
@@ -1695,12 +1719,18 @@ background: var(--baden, #3C3A83);
     margin-top: 13px;
 }
 
+.adress-row__item{
+    width: 13%;
+}
+
 .adress-row__box{
-    width: 150px;
-    height: 70px;
+    /* width: 150px;
+    height: 70px; */
+    width: 100%;
     border-radius: 3px;
     border: 1px solid var(--baden, #3C3A83);
     margin-top: 13px;
+    padding: 21px 0px 21px 27px;
 }
 
 .adress-row__item + .adress-row__item{
@@ -1769,17 +1799,19 @@ background: var(--baden, #3C3A83);
 }
 
 .comments__textarea{
-    width: 780px;
-    height: 133px;
+    /* width: 780px;
+    height: 133px; */
+    width: 69%;
+    min-height: 130px;
     border-radius: 3px;
     border: 1px solid var(--baden, #3C3A83);
 }
 
 .order__price{
     padding: 35px 28px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .order-price__amount{
@@ -1793,6 +1825,8 @@ background: var(--baden, #3C3A83);
 .order-price__price{
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .price__text{
@@ -1801,7 +1835,7 @@ background: var(--baden, #3C3A83);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-right: 36px;
+    /* margin-right: 36px; */
 }
 
 .price__number{
@@ -1816,12 +1850,14 @@ background: var(--baden, #3C3A83);
 
 
 .price__button{
-    width: 264px;
-    align-self: center;
+    /* width: 264px; */
+    /* align-self: center; */
+    padding: 21px 60px;
+    margin: 0 auto;
 }
 
 .price-desc__text{
-    width: 453px;
+    /* width: 453px; */
     text-align: center;
     color: var(--baden, #939393);
     font-size: 16px;
@@ -2420,6 +2456,10 @@ background: var(--baden, #3C3A83);
     .shops__desc{
         padding: 0 1.5% 0 2.5%;
     }
+
+    .price__number {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 1750px){
@@ -2487,6 +2527,22 @@ background: var(--baden, #3C3A83);
 
     .contentfilters-right__row svg{
         width: 20px;
+    }
+
+    .price__number {
+        font-size: 36px;
+    }
+
+    .price__text {
+        font-size: 23px;
+    }
+
+    .order-price__amount {
+        font-size: 19px;
+    }
+
+    .price__button{
+        font-size: 20px;
     }
 }
 
@@ -2573,6 +2629,34 @@ background: var(--baden, #3C3A83);
         width: 30px;
         height: 30px;
     } */
+
+    .korzina-checkbox__text{
+        font-size: 19px;
+    }
+
+    .price__number {
+        font-size: 32px;
+    }
+
+    .price__text {
+        font-size: 20px;
+    }
+
+    .adress__box{
+        padding: 15px 0px 15px 15px;
+    }
+
+    .adress-row__box{
+        padding: 15px 0px 15px 15px;
+    }
+
+    .customer-fullname__box {
+        padding: 15px 0px 15px 15px;
+    }
+
+    .customer-fullname__box::placeholder{
+        font-size: 18px;
+    }
 
 }
 
@@ -2686,6 +2770,14 @@ background: var(--baden, #3C3A83);
 
     .pagecatalog-filters__button{
         font-size: 15px;
+    }
+
+    .order__information {
+        width: 60%;
+    }
+
+    .order__price {
+        width: 37%;
     }
 }
 
@@ -2805,6 +2897,18 @@ background: var(--baden, #3C3A83);
     .sales-menu__items {
         width: calc(25% - 10px);
     }
+
+    .payment__checkbox + .payment__checkbox {
+        margin-left: 5px;
+    }
+
+    .customer-information__title {
+        font-size: 16px;
+    }
+
+    .korzina-checkbox__text {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1250px){
@@ -2837,6 +2941,42 @@ background: var(--baden, #3C3A83);
     }
 
     .filters-row__label{
+        font-size: 17px;
+    }
+
+    .order__information {
+        padding: 35px 0 35px 35px;
+    }
+
+    .customer-fullname__name {
+        width: 37%;
+    }
+
+    .customer-fullname__surname{
+        width: 37%;
+    }
+
+    .customer-contact__email {
+        width: 37%;
+    }
+
+    .customer-contact__phone {
+        width: 37%;
+    }
+
+    .adress__box{
+        width: 80%;
+    }
+
+    .comments__textarea{
+        width: 80%;
+    }
+
+    .price__number {
+        font-size: 30px;
+    }
+
+    .price__text {
         font-size: 17px;
     }
 }
@@ -2988,6 +3128,18 @@ background: var(--baden, #3C3A83);
 
     .pagecatalog__content{
         margin-left: 0;
+    }
+
+    .order__inner{
+        flex-direction: column;
+    }
+
+    .order__information{
+        width: 100%;
+    }
+
+    .order__price{
+        width: 100%;
     }
 }
 
@@ -3541,6 +3693,89 @@ background: var(--baden, #3C3A83);
     .container{
         padding: 0 10px;
     }
+
+    .adress-row__item + .adress-row__item {
+        margin-left: 40px;
+    }
+
+    .order__information{
+        border: none;
+        padding: 0;
+    }
+
+    .order__price{
+        border: none;
+        padding: 0;
+    }
+
+    .order-price__desc{
+        display: none;
+    }
+
+    .order-price__amount{
+        display: none;
+    }
+
+    .order-price__price{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .customer-fullname__box::placeholder{
+        font-size: 0px;
+    }
+
+    .customer__fullname{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .customer__contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .customer-fullname__name{
+        width: 100%;
+    }
+
+    .customer-fullname__surname{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .customer-contact__email{
+        width: 100%;
+    }
+
+    .customer-contact__phone{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .adress__box{
+        width: 100%;
+    }
+
+    .adress__row{
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 10px;
+    }
+
+    .adress-row__item{
+        width: calc(50% - 15px);
+    }
+
+    .adress-row__item + .adress-row__item {
+        margin-left: 0;
+    }
+
+    .comments__textarea{
+        width: 100%;
+    }
 }
 
 @media (max-width: 550px){
@@ -3601,6 +3836,8 @@ background: var(--baden, #3C3A83);
         width: 20px;
         height: 20px;
     }
+
+    
 }
 
 @media (max-width: 500px){
@@ -3620,6 +3857,18 @@ background: var(--baden, #3C3A83);
     .section__title{
         width: 100%;
     }
+
+    .payment__method{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .payment__checkbox + .payment__checkbox {
+        margin-left: 0px;
+    }
+    
+
 }
 
 @media (max-width: 450px){
