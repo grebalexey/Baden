@@ -3245,6 +3245,10 @@ background: var(--baden, #3C3A83);
     .menu__card {
         width: calc(33.33% - 27px);
     }
+
+    .phone__cooperation{
+        display: block;
+    }
 }
 
 @media (max-width: 850px){
@@ -3268,13 +3272,13 @@ background: var(--baden, #3C3A83);
         align-items: flex-start;
     }
 
-    .cooperation-images__big{
+    /* .cooperation-images__big{
         display: none;
     }
 
     .cooperation-images__small{
         display: block;
-    }
+    } */
 
     .menu-card__purchase svg{
         width: 20px;
@@ -3386,6 +3390,18 @@ background: var(--baden, #3C3A83);
 
     .cooperation__images{
         width: 100%;
+    }
+
+    .cooperation__content{
+        flex-direction: column;
+    }
+
+    .cooperation__text{
+        width: 100%;
+    }
+
+    .cooperation-text__title br{
+        display: none;
     }
 }
 
