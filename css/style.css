@@ -1331,6 +1331,10 @@ background: var(--baden, #3C3A83);
     width: 47%;
 }
 
+.delivery__direction--hidden{
+    display: none;
+}
+
 /* .delivery__price{
     margin-left: 38px;
 } */
@@ -1347,6 +1351,7 @@ background: var(--baden, #3C3A83);
 .price-items__line{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .price-items__text{
@@ -4052,8 +4057,8 @@ background: var(--baden, #3C3A83);
 
     .price-items__box{
         position: absolute;
-        bottom: 36px;
-        left: 30px;
+        bottom: -60px;
+        left: -30px;
     }
 
     .price__line{
