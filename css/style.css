@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-* {
+/* * {
     outline: solid red;
- }
+ } */
 
 html{
     height: 100%;
@@ -692,17 +692,18 @@ background: var(--baden, #3C3A83);
 }
 
 .sales-menu__button{
-    width: 100%;
+    width: calc(100% + 40px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin-left: -40px;
 }
 
 .sales-menu__items{
     list-style: none;
-    width: calc(25% - 40px);
-    border-radius: 2px;
-    border: 1px solid var(--baden, #939393);
+    width: 25%;
+    padding-left: 40px;
+    padding-bottom: 20px;
     position: relative;
     
 }
@@ -714,6 +715,8 @@ background: var(--baden, #3C3A83);
     height: 100%;
     /* width: 400px;
     height: 72px; */
+    border-radius: 2px;
+    border: 1px solid var(--baden, #939393);
     padding: 23px 0;
     text-decoration: none;
     
@@ -757,7 +760,8 @@ background: var(--baden, #3C3A83);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -40px;
 }
 
 
@@ -769,7 +773,9 @@ background: var(--baden, #3C3A83);
 }
 
 .card__wrap{
-    padding: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    width: 25%;
 }
 
 .card + .card{
@@ -820,6 +826,7 @@ background: var(--baden, #3C3A83);
 .card__bottom{
     padding-left: 16px;
     margin-top: 30px;
+    padding-bottom: 15px;
     position: relative;
 }
 
@@ -854,7 +861,7 @@ background: var(--baden, #3C3A83);
 .card-bottom__price{
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .card-bottom__pricenew{
@@ -881,7 +888,7 @@ background: var(--baden, #3C3A83);
     bottom: 0;
     right: 0;
     margin-right: 15px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 15px;
     background-color: #3C3A83;
     padding: 13px;
     border-radius: 5px;
@@ -2718,7 +2725,11 @@ background: var(--baden, #3C3A83);
         width: calc(33.33% - 40px);
     } */
 
-    .menu__card:last-child{
+    .main-card__wrap{
+        width: 33.3%;
+    }
+
+    .main-card__wrap:last-child{
         display: none;
     }
 
@@ -2862,9 +2873,9 @@ background: var(--baden, #3C3A83);
         font-size: 18px;
     }
 
-    .sales-menu__items {
+    /* .sales-menu__items {
         width: calc(25% - 30px);
-    }
+    } */
 
     .contentfilters-right__row {
         font-size: 20px;
@@ -2962,8 +2973,12 @@ background: var(--baden, #3C3A83);
     }
 
 
-    .sales-menu__items {
+    /* .sales-menu__items {
         width: calc(25% - 10px);
+    } */
+
+    .sales-menu__links {
+        font-size: 15px;
     }
 
     .payment__checkbox + .payment__checkbox {
@@ -3118,9 +3133,9 @@ background: var(--baden, #3C3A83);
         width: 36%;
     }
 
-    .sales-menu__links{
+    /* .sales-menu__links{
         font-size: 16px;
-    }
+    } */
 
     .pagecatalog-card__purchase{
         padding: 7px;
@@ -3292,16 +3307,25 @@ background: var(--baden, #3C3A83);
     .shops__line {
         height: 140px;
     }
+
+    .sales-menu__items{
+        padding-left: 30px;
+    }
+
+    .sales-menu__button{
+        width: calc(100% + 30px);
+        margin-left: -30px;
+    }
 }
 
 @media (max-width: 1050px){
     .sales-menu__button{
         flex-wrap: wrap;
-        gap: 10px;
+        /* gap: 10px; */
     }
 
     .sales-menu__items {
-        width: calc(50% - 5px);
+        width: 50%;
     }
 }
 
@@ -3640,13 +3664,17 @@ background: var(--baden, #3C3A83);
         width: calc(50% - 40px);
     } */
 
-    .menu__card:last-child{
+    .main-card__wrap{
+        width: 50%;
+    }
+
+    .main-card__wrap:last-child{
         display: block;
     }
 
-    .menu-cards__content{
+    /* .menu-cards__content{
         gap: 20px;
-    }
+    } */
 
     /* .menu__card + .menu__card{
         margin-left: 0;
@@ -4059,6 +4087,16 @@ background: var(--baden, #3C3A83);
     
     .delivery__direction--hidden{
         flex-direction: column;
+    }
+
+    .main-card__wrap{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu-cards__content{
+        width: calc(100% + 20px);
+        margin-left: -20px;
     }
 }
 
