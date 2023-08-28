@@ -729,12 +729,10 @@ background: var(--baden, #3C3A83);
     /* padding: 23px auto; */
 }
 
-.sales-menu__items:hover{
-    border-color: #4C4ABE;
-}
 
 .sales-menu__items:hover .sales-menu__links{
     color: var(--baden, #4C4ABE);
+    border-color: #4C4ABE;
 }
 
 /* .sales-menu__items + .sales-menu__items{
