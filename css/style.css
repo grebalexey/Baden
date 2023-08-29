@@ -4199,6 +4199,11 @@ button{
         width: 25px;
         height: 25px;
     }
+
+    .catalog__thirdmenu {
+        left: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 725px){
