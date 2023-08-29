@@ -293,7 +293,7 @@ button{
 }
 
 .header-bottom__catalog{
-    position: relative;
+    /* position: relative; */
     width: 399px;
     height: 75px;
     margin: 15px 0 16px;
@@ -317,13 +317,13 @@ button{
     border-radius: 5px 0px 0px 5px;
     background: var(--baden, #EEF);
     padding: 31px 0 0;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     display: none;
+    z-index: 100;
     transition: 0.4s;
 }
 
 .catalog-menu__item{
-    position: relative;
     width: 100%;
     padding: 0 23px 0 25px;
 }
@@ -376,13 +376,13 @@ button{
 
 .catalog__submenu{
     position: absolute;
-    top: -31px;
+    top: 0;
     left: 100%;
     border-radius: 0px 5px 5px 0px;
     background: #FFF;
     width: 100%;
     padding: 62px 0 62px 40px;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     display: none;
     transition: 0.4s;
 }
@@ -416,7 +416,7 @@ button{
     background: #FFF;
     width: 100%;
     padding: 62px 0 62px 40px;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     display: none;
     transition: 0.4s;
 }
@@ -432,13 +432,9 @@ button{
     margin-bottom: 33px;
 }
 
-/* .header-bottom__catalog:hover .catalog__menu{
+.header-bottom__catalog:hover .catalog__menu{
     display: block;
-} */
-
-/* .catalog-menu__link:hover .catalog__menu{
-    display: block;
-} */
+}
 
 .catalog-menu__item:hover .catalog__submenu{
     display: block;
@@ -2699,6 +2695,18 @@ button{
     .contacts-email__number{
         font-size: 17px;
     }
+
+    .catalog-menu__text {
+        font-size: 28px
+    }
+
+    .catalog-submenu__text {
+        font-size: 20px;
+    }
+
+    .catalog-thirdmenu__link {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1700px){
@@ -2869,6 +2877,29 @@ button{
 
     .customer-fullname__box::placeholder{
         font-size: 18px;
+    }
+
+    .catalog-menu__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .catalog-menu__icon svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .catalog-menu__text {
+        font-size: 24px;
+    }
+
+    .catalog-submenu__link svg{
+        height: 25px;
+        width: 25px;
+    }
+
+    .catalog-submenu__text {
+        font-size: 17px;
     }
 
 }
@@ -3164,6 +3195,20 @@ button{
     .direction__price{
         font-size: 25px;
     }
+
+    .catalog-menu__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .catalog-menu__icon svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .catalog-menu__text {
+        font-size: 21px;
+    }
 }
 
 @media (max-width: 1300px){
@@ -3218,6 +3263,10 @@ button{
 
     .shops-desc__place {
         font-size: 16px;
+    }
+
+    .catalog-submenu__text {
+        font-size: 14px;
     }
 }
 
@@ -3559,6 +3608,10 @@ button{
     .sales-menu__button{
         width: calc(100% + 30px);
         margin-left: -30px;
+    }
+
+    .catalog-thirdmenu__link {
+        font-size: 14px;
     }
 }
 
